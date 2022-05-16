@@ -1,0 +1,496 @@
+.container {
+  padding: 0;
+
+  .apresentacao {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+
+    .nome {
+      display: flex;
+      padding-left: 120px;
+      flex-direction: column;
+      width: 45%;
+
+      span {
+        color: white;
+        font-size: 48px;
+        font-family: "Visby Round CF, Bold";
+        margin-bottom: 1rem;
+      }
+      .funcao {
+        background-color: #24b865;
+        width: 70%;
+        text-align: center;
+        color: white;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-family: "Visby Round CF, Bold";
+      }
+    }
+
+    .foto {
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .areaFoto {
+        background-image: url("/images/andre.jfif");
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 29);
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+          width: 550px;
+          height: 550px;
+        }
+      }
+    }
+  }
+
+  // --------------------------------------------------------  ABOUT --------------------------------------------------------
+
+  .sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13131d;
+    padding: 80px 0;
+    span {
+      color: #fff;
+      font-family: "Visby Round CF, Bold";
+      font-size: 36px;
+    }
+
+    p {
+      text-align: center;
+      color: #959595;
+      font-family: "Visby Round CF";
+      margin: 10px 0 20px 0;
+    }
+    .experiencia {
+      width: 70%;
+      background-color: #1b1a27;
+      padding: 3rem;
+      display: flex;
+
+      .info {
+        width: 50%;
+        flex-direction: column;
+        padding: 0 30px;
+
+        .foto {
+          display: flex;
+          justify-content: end;
+          margin-bottom: 20px;
+
+          img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+          }
+        }
+
+        .dados {
+          display: flex;
+          justify-content: end;
+
+          .pessoais {
+            display: flex;
+            margin: 0 0 30px 0;
+            span {
+              font-family: "Visby Round CF, Bold";
+              color: #24b865;
+              font-size: 16px;
+            }
+            p {
+              color: rgb(236, 236, 236);
+              font-size: 16px;
+              font-family: "Visby Round CF";
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
+      .linguagem {
+        width: 50%;
+        flex-direction: column;
+        padding: 0 30px;
+        span {
+          font-size: 22px;
+        }
+
+        .niveis {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-family: "Visby Round CF, Medium";
+            font-size: 14px;
+            margin: 30px 0 10px 0;
+          }
+          .full {
+            width: 100%;
+            height: 25px;
+            background-color: #13131d;
+            border-radius: 15px;
+            .porcentagem1 {
+              width: 90%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+            .porcentagem2 {
+              width: 90%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+            .porcentagem3 {
+              width: 80%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+            .porcentagem4 {
+              width: 50%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+            .porcentagem5 {
+              width: 85%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+            .porcentagem6 {
+              width: 60%;
+              background-color: #24b865;
+              height: 25px;
+              border-radius: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Visby Round CF, Medium";
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // --------------------------------------------------------  SERVICES --------------------------------------------------------
+
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b1a27;
+    padding: 80px 0 50px 0;
+
+    span {
+      color: #fff;
+      font-family: "Visby Round CF, Bold";
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .servicesArea {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .text {
+          height: 50%;
+
+          span {
+            color: #fff;
+            font-family: "Visby Round CF, Bold";
+            font-size: 16px;
+          }
+          p {
+            color: rgb(221, 221, 221);
+            font-size: 14px;
+            font-family: "Visby Round CF";
+          }
+        }
+      }
+    }
+  }
+
+  // --------------------------------------------------------  EXPERIENCE --------------------------------------------------------
+
+  .experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13131d;
+    padding: 80px 0 0 0;
+
+    span {
+      color: #fff;
+      font-family: "Visby Round CF, Bold";
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px 0 40px 0;
+
+      .imageArea {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .information {
+        width: 50%;
+        .dados {
+          .pessoais {
+            display: flex;
+            flex-direction: column;
+            span {
+              color: #24b865;
+              font-size: 16px;
+              margin: 15px 0 5px 0;
+            }
+            p {
+              color: rgb(236, 236, 236);
+              font-size: 16px;
+              font-family: "Visby Round CF";
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .cardRight {
+      background-color: #1b1a27;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px 0 40px 0;
+
+      .imageArea {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .information {
+        width: 50%;
+        .dados {
+          .pessoais {
+            display: flex;
+            flex-direction: column;
+            span {
+              color: #24b865;
+              font-size: 16px;
+              margin: 15px 0 5px 0;
+            }
+            p {
+              color: rgb(236, 236, 236);
+              font-size: 16px;
+              font-family: "Visby Round CF";
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // -------------------------------------------------------- CONTACT --------------------------------------------------------
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b1a27;
+    padding: 80px 0 50px 0;
+
+    span {
+      color: #fff;
+      font-family: "Visby Round CF, Bold";
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .contactArea {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 33%;
+        text-align: center;
+
+        img {
+          margin-bottom: 20px;
+        }
+        .text {
+          height: 100%;
+
+          span {
+            color: #fff;
+            font-family: "Visby Round CF, Bold";
+            font-size: 16px;
+          }
+          p {
+            color: rgb(221, 221, 221);
+            font-size: 14px;
+            font-family: "Visby Round CF";
+          }
+        }
+      }
+    }
+
+    .inputArea {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin-top: 30px;
+
+      input {
+        border-radius: 5px;
+        border: none;
+        background-color: #13131d;
+        height: 40px;
+        width: 32%;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: "Visby Round CF";
+        color: rgb(221, 221, 221);
+        padding: 0 15px;
+      }
+    }
+
+    .textAreaInput {
+      width: 75%;
+      margin-top: 30px;
+      textArea {
+        background-color: #13131d;
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: "Visby Round CF";
+        color: rgb(221, 221, 221);
+        padding: 15px 15px;
+        border-radius: 5px;
+      }
+    }
+    .buttonArea {
+      width: 75%;
+      display: flex;
+      justify-content: end;
+      margin-top: 30px;
+      button {
+        cursor: pointer;
+        border: none;
+        background-color: #24b865;
+        color: #fff;
+        font-family: "Visby Round CF, Bold";
+        font-size: 18px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 0 20px;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+
+  // -------------------------------------------------------- FOOTER --------------------------------------------------------
+
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #13131d;
+    padding: 30px 0;
+
+    span {
+      color: #fff;
+      font-family: "Visby Round CF, Bold";
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 10%;
+       img{
+         cursor: pointer;
+         width: 25px;
+       }
+    }
+  }
+}

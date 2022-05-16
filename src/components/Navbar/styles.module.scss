@@ -1,0 +1,32 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid #ffffff29;
+
+    .links {
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+        width: 50%;
+        font-family: "Visby Round CF, Bold";
+
+        a{
+            padding: 5px 20px;
+            color: white;
+            transition: ease-in-out 0.3s;
+            &:hover {
+                color: #24B865;
+                letter-spacing: 0.1rem;
+            }
+            &:focus{
+                color: #24B865;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+}
